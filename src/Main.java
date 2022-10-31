@@ -28,7 +28,6 @@ public class Main {
         miSesionObjeto = new Sesion1();
 
         Sesion1 miSesionObjeto2 = new Sesion1(miNombre);
-
     }
 
     //Constructor
