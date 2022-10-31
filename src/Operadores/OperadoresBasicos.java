@@ -29,7 +29,9 @@ package Operadores;
             System.out.println("Division: " + num1 / num2);
             System.out.println("Multiplicacion: " + num1 * num2);
         }
+        public static void main (String[] args) {
 
+        }
         public void operadoresAritmeticos(){
             //para llamar una funcion dentro de una misma clase, simplmente poner el nombre
             sumar();
@@ -102,38 +104,40 @@ package Operadores;
             System.out.println("es mayor o igual >: " + resultado);
 
         }
-     public static void main (String[] args){
-            //operadores logicos
-            // && --> and los 2 valores deben ser iguales tanto al de la izquierda como el de la derecha
-            // 0 = false
-            // 1 = true
-            // 0 && 0 --> true
-            // 0 && 1 --> False
-            // 1 && 0 --> False
-            // 1 && 1 --> True
+
+        public void operadoresLogicos(){
+        //operadores logicos
+        // && --> and los 2 valores deben ser iguales tanto al de la izquierda como el de la derecha
+        // 0 = false
+        // 1 = true
+        // 0 && 0 --> true
+        // 0 && 1 --> False
+        // 1 && 0 --> False
+        // 1 && 1 --> True
 
 
-            boolean boolval1 = true;
-            boolean boolval2=false;
+        boolean boolval1 = true;
+        boolean boolval2 = false;
 
-            boolean resultado = boolval1 && boolval2; // 1 && 0
-            System.out.println(resultado);
+        boolean resultado = boolval1 && boolval2; // 1 && 0
+        System.out.println(resultado);
 
-            resultado = (5 == 5) && true; //true && true --> 1 && 1
+        resultado = (5 == 5) && true; //true && true --> 1 && 1
 
-            // || -->(0) si hay un valor verdadero, regresa true
-            // 0 = false
-            // 1 = true
-            // 0 || 0 --> false --> false || true;
-            // 0 || 1 --> true --> false || true;
-            // 1 || 0 --> true --> true || false;
-            // 1 || 1 --> True --> true || true;
-            System.out.println(false || false);
-            System.out.println(false || true);
-            System.out.println(true || false);
-            System.out.println(true || true);
+        // || -->(0) si hay un valor verdadero, regresa true
+        // 0 = false
+        // 1 = true
+        // 0 || 0 --> false --> false || true;
+        // 0 || 1 --> true --> false || true;
+        // 1 || 0 --> true --> true || false;
+        // 1 || 1 --> True --> true || true;
+        System.out.println(false || false);
+        System.out.println(false || true);
+        System.out.println(true || false);
+        System.out.println(true || true);
 
-        }
+
+    }
     }
 
 
