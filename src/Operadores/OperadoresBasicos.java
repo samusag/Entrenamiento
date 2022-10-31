@@ -19,7 +19,7 @@ package Operadores;
             System.out.println(resultado);
         }
 
-        public static void operaciones_aritmeticas(int num1, int num2) {
+        public static void operacionesAritmeticas(int num1, int num2) {
             int resultado = num1 + num2;
             System.out.println("Suma: " + resultado);
 
@@ -29,8 +29,24 @@ package Operadores;
             System.out.println("Multiplicacion: " + num1 * num2);
 
         }
+        public static void main(String[] args){
+            //operadores relacionales -->regresa un valor verdadero o falso
+            // == -> es el valor de la izquierda igual al de la derecha, es decir, es cuando se compara dos valores
 
-        public static void main(String[] args) {
+            boolean resultado;
+            int num1 = 10;
+            int num2 = 15;
+            resultado = num1 == num2;
+            System.out.println(resultado);
+
+            String caracter1 = "a";
+           // char caracter2 = "a";
+            System.out.println(caracter1 == Integer.toString(num2));
+
+            System.out.println(true==true);
+        }
+
+        public void operadoresAritmeticos(){
             //para llamar una funcion dentro de una misma clase, simplmente poner el nombre
             sumar();
             sumar(20,20);
@@ -43,7 +59,7 @@ package Operadores;
             //incremento ++
             //disminuir --
 
-            operaciones_aritmeticas(30,15);
+            operacionesAritmeticas(30,15);
 
             //incrementar ++  -->incrementar 1
             int valor = 5;
@@ -60,8 +76,8 @@ package Operadores;
             System.out.println(valor);
             valor-=5;
             System.out.println(valor);
-
         }
+
     }
 
 
