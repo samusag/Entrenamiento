@@ -1,44 +1,72 @@
 package Operadores;
+import javafx.scene.SubScene;
+
 
 public class Condicionales {
 
+
     public static void main(String[] args) {
-        //if - Else Evalua varias condiciones
-        // if (condicion){
-        // statements...
-        // instrucciones...
+
+        switchCase("");
+       }
+
+    private static void switchCase(String tipoLicencia) {
+
+        switch (tipoLicencia) {
+            case "Vencida":
+                System.out.println("Necesitas renovar");
+                break; //ayuda a salirnos del switch
+            case "Nueva":
+                System.out.println("OK");
+                break;
+            case "Por vencer":
+                System.out.println("Tu licencia casi vence!");
+                break; //ayuda a salirnos del switch
+            default:
+                System.out.println("No podemos evaluar tu licencia");
+        }
+
+    }
+    private void ifElse() {
+        // If - Else Evaluar varias condiciones
+        // if (condicion) {
+        //    statements...
+        //    instrucciones...
+        // } else {
+        //    varias instrucciones...
         // }
-        // else {
-        // varias instrucciones...
-        // }
-        int edad = 20;
-        // mayor a 18 años
-        // mayor de 15
+
+        int edad = 17;
+        // mayor= a 18 anios
+        // mayor= de 15 licencia provisional
+
         if(edad >= 18) {
             System.out.println("Licencia aceptada");
-        } else if (edad >= 15)
-        {
+        } else if (edad >= 15) {
             System.out.println("Licencia provisional");
         } else {
             System.out.println("Licencia rechazada");
         }
-        if (edad >= 15){
+
+
+        if(edad >= 15) {
             if(edad >= 18)
                 System.out.println("Licencia aceptada");
             else
                 System.out.println("Licencia provisional");
+        } else
+            System.out.println("Licencia rechazada");
 
 
-            //ternarios
-            // ? -->significa entonces
-            // : --> significa sino
-            String resultados = edad >= 15 ? "Licencia provisional" : "Licencia rechazada";
-            System.out.println(resultados);
+        // ternarios
+        // ? --> significa entonces
+        // : --> sino
+        String resultado = edad >= 15 ? "Licencia provisional" : "Licencia rechazada";
+        System.out.println(resultado);
 
-            boolean resultadobooleano = edad >= 18 ? true : false;
-            //01:23:02
-        }
-        }
-
+        boolean resultadobooleano = edad >= 18 ? true : false;
     }
+}
+
+
 
