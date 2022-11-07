@@ -36,7 +36,7 @@ public class Condicionales {
         //    varias instrucciones...
         // }
 
-        int edad = 17;
+        int edad = 18;
         // mayor= a 18 anios
         // mayor= de 15 licencia provisional
 
