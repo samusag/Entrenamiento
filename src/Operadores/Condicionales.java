@@ -27,6 +27,7 @@ public class Condicionales {
         }
 
     }
+
     private void ifElse() {
         // If - Else Evaluar varias condiciones
         // if (condicion) {
@@ -64,7 +65,7 @@ public class Condicionales {
         String resultado = edad >= 15 ? "Licencia provisional" : "Licencia rechazada";
         System.out.println(resultado);
 
-        boolean resultadobooleano = edad >= 18 ? true : false;
+        boolean resultadobooleano = edad >= 17 ? true : false;
     }
 }
 
