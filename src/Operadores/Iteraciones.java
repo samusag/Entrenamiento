@@ -39,7 +39,7 @@ public class Iteraciones {
         // do {
         //      operaciones
         // } while (expresion_booleana)
-        int i = 6;
+        int i = 9;
         do { // ciclo infinito //15
             System.out.println(i); //0, 3,6, 9, 12, 15,
         } while (i <= numero);
