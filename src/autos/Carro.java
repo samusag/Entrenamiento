@@ -4,6 +4,7 @@ import com.sun.deploy.security.SelectableSecurityManager;
 import javafx.scene.SubScene;
 
 public class Carro {
+
     // propiedades
     String color;
     public int numeroLlantas;
